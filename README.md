@@ -82,6 +82,8 @@ PROJECT_HLQ := USER.SAMPLE
 
 This sets the High-Level Qualifier for all project datasets.
 
+You need to change the location of the host datasets in `jcl/link.jcl`, too.
+
 ## Development Workflow & Build Process
 
 The development and build process consists of these steps:
