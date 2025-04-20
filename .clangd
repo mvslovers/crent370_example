@@ -1,0 +1,33 @@
+{
+  "CompileFlags": {
+    "Add": [
+      "-xc",
+      "-std=gnu89",
+      "-ferror-limit=0",
+      "-U__LP64__",
+      "-Wno-comment",
+      "-Wno-pragma-pack",
+      "-Wno-include-hygiene",
+      "-Wno-system-headers",
+      "-nostdinc",
+      "-isystem../contrib/crent370_sdk/inc",
+      "-I../inc"
+    ]
+  },
+  "Diagnostics": {
+    "ClangTidy": {
+      "Add": ["*"],
+      "Remove": [
+        "llvmlibc-restrict-system-libc-headers",
+        "llvm-include-order",
+        "modernize-deprecated-headers",
+        "hicpp-no-assembler",
+        "altera-unroll-loops",
+        "bugprone-easily-swappable-parameters",
+        "bugprone-not-null-terminated-result",
+        "readability-identifier-length"
+      ]
+    },
+    "UnusedIncludes": "Strict"
+  }
+}
